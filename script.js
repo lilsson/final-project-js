@@ -17,9 +17,9 @@ let data = [
         title: 'Printerest',
         url: 'https://www.pinterest.com/search/pins/?q=old%20cars&rs=typed&term_meta[]=old%7Ctyped&term_meta[]=cars%7Ctyped'
     },
-    {
+    {   
         id: 2,
-        imageUrl: 'https://hips.hearstapps.com/toc.h-cdn.co/assets/16/18/2048x1532/gallery-1462571225-porsche-356-c-coupe.jpg?resize=980:*',
+        imageUrl: 'https://hips.hearstapps.com/toc.h-cdn.co/assets/16/18/4000x3983/ferrari-308-gts-a.jpg?resize=980:*',
         title: 'Printerest',
         url: 'https://www.pinterest.com/search/pins/?q=old%20cars&rs=typed&term_meta[]=old%7Ctyped&term_meta[]=cars%7Ctyped'
     },
@@ -35,6 +35,25 @@ let data = [
         title: 'Printerest',
         url: 'https://www.pinterest.com/search/pins/?q=old%20cars&rs=typed&term_meta[]=old%7Ctyped&term_meta[]=cars%7Ctyped'
     },
+    {
+        id: 5,
+        imageUrl: 'https://hips.hearstapps.com/toc.h-cdn.co/assets/16/18/4000x3117/1972-detomaso-pantera-a.jpg?resize=980:*',
+        title: 'Printerest',
+        url: 'https://www.pinterest.com/search/pins/?q=old%20cars&rs=typed&term_meta[]=old%7Ctyped&term_meta[]=cars%7Ctyped'
+    },
+    {
+        id: 6,
+        imageUrl: 'http://www.hongliyangzhi.com/manufacturers/mercedes-benz/mercedes-benz-sls/mercedes-benz-sls-1960/mercedes-benz-sls-1960-6.jpg',
+        title: 'Printerest',
+        url: 'https://www.pinterest.com/search/pins/?q=old%20cars&rs=typed&term_meta[]=old%7Ctyped&term_meta[]=cars%7Ctyped'
+    },
+    {
+        id: 6,
+        imageUrl: 'https://hips.hearstapps.com/toc.h-cdn.co/assets/16/18/2560x1706/1967-camaro.jpg?resize=980:*',
+        title: 'Printerest',
+        url: 'https://www.pinterest.com/search/pins/?q=old%20cars&rs=typed&term_meta[]=old%7Ctyped&term_meta[]=cars%7Ctyped'
+    },
+    
 ]
 
 
@@ -109,6 +128,6 @@ arrowRight.addEventListener('click', arrowRightClick);
 
 setInterval( ()=> {
     arrowRightClick();
-}, 4000);
+}, 3000);
 
  setSlide();

@@ -48,17 +48,40 @@
                 <i class="fas fa-angle-right"></i> 
            </div>
        </div>
-       
-       <!-- <div class="slider-content" id="slider-content">
-          <div id="arrow-left">
-              <i class="fas fa-angle-left"></i>
-          </div>
-          <div id="arrow-right">
-              <i class="fas fa-angle-right"></i> 
-          </div>
-      </div> -->
-       
-   </section>
+    </section>
+    <section>
+        <form id="registration" action="" method="GET">
+            <div class="form-wraper">
+                <label for="user">Username</label>
+                <input type="text" name="username" id="user" placeholder="Username..">
+                <div class="error-text" id="error_username"></div>
+            </div>
+            <div class="form-wraper">
+                <label for="mypassword">Password</label>
+                <input type="password" name="password" id="mypassword" placeholder="Password..">
+                <div class="error-text" id="error_password"></div>
+            </div>
+            <div class="form-wraper">
+                <label for="mypassword2"> Repeat Password</label>
+                <input type="password" name="password2" id="mypassword2" placeholder="Repeat Password..">
+                <div class="error-text" id="error_password2"></div>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+                <div class="error-text" id="error_gender"></div>
+            </div>
+            <div>
+                <input type="checkbox" name="agree">
+                <label for="">i agree terms and conditions </label>
+                <div class="error-text" id="agree"></div>
+            </div>
+            <button type="submit">Submit</button>
+             
+        </form>
+    </section>
   <script src="script.js"></script>  
 </body>
 </html>

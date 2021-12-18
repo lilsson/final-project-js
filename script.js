@@ -43,12 +43,6 @@ let data = [
     },
     {
         id: 6,
-        imageUrl: 'http://www.hongliyangzhi.com/manufacturers/mercedes-benz/mercedes-benz-sls/mercedes-benz-sls-1960/mercedes-benz-sls-1960-6.jpg',
-        title: 'Printerest',
-        url: 'https://www.pinterest.com/search/pins/?q=old%20cars&rs=typed&term_meta[]=old%7Ctyped&term_meta[]=cars%7Ctyped'
-    },
-    {
-        id: 6,
         imageUrl: 'https://hips.hearstapps.com/toc.h-cdn.co/assets/16/18/2560x1706/1967-camaro.jpg?resize=980:*',
         title: 'Printerest',
         url: 'https://www.pinterest.com/search/pins/?q=old%20cars&rs=typed&term_meta[]=old%7Ctyped&term_meta[]=cars%7Ctyped'
@@ -100,7 +94,7 @@ function setSlide() {
 
     
 
-    console.log(slideItem);
+    // console.log(slideItem);
 }
 
 function arrowLeftClick() {
@@ -131,3 +125,66 @@ setInterval( ()=> {
 }, 3000);
 
  setSlide();
+
+//                         registracion
+
+document.getElementById('registration').addEventListener('submit', function(event2) {
+  event2.preventDefault();
+
+  let errors = {};
+
+  let form = event2.target;
+//   console.log(form);
+
+// username
+let username = form.querySelector('[name = "username"]').value;
+  if (username.length < 4) {
+      errors.username = 'Min 4 letters';
+  }
+  if (username == ' ') {
+      errors.username = 'Please enter your Username';
+  }
+//   password
+
+let password = form.querySelector('[name = "password"]').value;
+let password2 = form.querySelector('[name = "password2"]').value;
+
+if (password.length < 5) {
+    errors.password = 'Inavlid Password';
+}
+
+if(password != password2) {
+    errors.password2 = 'passwords do not match';
+}
+
+// checkbox
+ let agree = form.querySelector('[name = "agree"]').checked;
+
+ if( agree == false) {
+     errors.agree ='you must agree our terms and conditions';
+ }
+
+//  radio
+let gender = false;
+
+form.querySelectorAll('[name = "gender"]').forEach(item2 => {
+    if (item2.checked) {
+        gender = true;
+    }   
+});
+if ( !gender) {
+    errors.gender = 'Please select your Gender';
+}
+
+// errors
+for (let item in errors) {
+   console.log(item);
+
+   let errorPlaceholder = document.getElementById('error_' + item);
+
+   if (errorPlaceholder) {
+       errorPlaceholder.textContent = arrors[item];
+   }
+}
+console.log(errors);
+})

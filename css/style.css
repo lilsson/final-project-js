@@ -157,3 +157,13 @@ img {
     left: 50%;
     transform: translateX(-50%);
 }
+ /*          registracion          */
+ .form-wraper{
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 20px;
+ }
+ .form-wraper input {
+     max-width: 700px;
+     width: 100%;
+ }

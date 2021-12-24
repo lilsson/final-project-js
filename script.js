@@ -153,9 +153,13 @@ if (password.length < 5) {
     errors.password = 'Inavlid Password';
 }
 
+if (password2.length == ' ') {
+    errors.password2 = 'repeat password';
+}
 if(password != password2) {
     errors.password2 = 'passwords do not match';
 }
+
 
 // checkbox
  let agree = form.querySelector('[name = "agree"]').checked;
@@ -175,6 +179,10 @@ form.querySelectorAll('[name = "gender"]').forEach(item2 => {
 if ( !gender) {
     errors.gender = 'Please select your Gender';
 }
+ 
+form.querySelectorAll('.error-text').forEach(item3 => {
+    item3.textContent = ' ';
+});
 
 // errors
 for (let item in errors) {
@@ -183,8 +191,20 @@ for (let item in errors) {
    let errorPlaceholder = document.getElementById('error_' + item);
 
    if (errorPlaceholder) {
-       errorPlaceholder.textContent = arrors[item];
+       errorPlaceholder.textContent = errors[item];
    }
+}
+if (Object.keys(errors).length == 0){
+    form.submit();
 }
 console.log(errors);
 })
+// show me password
+function myFunction() {
+    var x = document.getElementById("mypassword");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }

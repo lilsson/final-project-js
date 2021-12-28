@@ -13,37 +13,37 @@
 let data = [
     {
         id: 1,
-        imageUrl: 'https://hips.hearstapps.com/toc.h-cdn.co/assets/16/18/3200x2473/gallery-1462570502-1967-volvo-1800s.jpg?resize=980:*',
+        imageUrl: 'https://images2.bonhams.com/image?src=Images/live/2018-12/13/24819031-1-90.jpg&width=960',
         title: 'Printerest',
         url: 'https://www.pinterest.com/search/pins/?q=old%20cars&rs=typed&term_meta[]=old%7Ctyped&term_meta[]=cars%7Ctyped'
     },
     {   
         id: 2,
-        imageUrl: 'https://hips.hearstapps.com/toc.h-cdn.co/assets/16/18/4000x3983/ferrari-308-gts-a.jpg?resize=980:*',
+        imageUrl: 'https://images2.bonhams.com/image?src=Images/live/2021-09/09/25125012-1-70.jpg&width=960',
         title: 'Printerest',
         url: 'https://www.pinterest.com/search/pins/?q=old%20cars&rs=typed&term_meta[]=old%7Ctyped&term_meta[]=cars%7Ctyped'
     },
     {
         id: 3,
-        imageUrl: 'https://hips.hearstapps.com/toc.h-cdn.co/assets/16/14/2560x1906/1968-chevrolet-corvette_1.jpg?resize=980:*',
+        imageUrl: 'https://images1.bonhams.com/image?src=Images/live/2021-06/01/25093855-1-25.jpg&width=960',
         title: 'Printerest',
         url: 'https://www.pinterest.com/search/pins/?q=old%20cars&rs=typed&term_meta[]=old%7Ctyped&term_meta[]=cars%7Ctyped'
     },
     {
         id: 4,
-        imageUrl: 'https://hips.hearstapps.com/toc.h-cdn.co/assets/16/14/3200x2136/1971-lamborghini-miura-sv_1.jpg?resize=980:*',
+        imageUrl: 'https://images2.bonhams.com/image?src=Images/live/2021-09/10/25128857-1-71.jpg&width=960',
         title: 'Printerest',
         url: 'https://www.pinterest.com/search/pins/?q=old%20cars&rs=typed&term_meta[]=old%7Ctyped&term_meta[]=cars%7Ctyped'
     },
     {
         id: 5,
-        imageUrl: 'https://hips.hearstapps.com/toc.h-cdn.co/assets/16/18/4000x3117/1972-detomaso-pantera-a.jpg?resize=980:*',
+        imageUrl: 'https://images2.bonhams.com/image?src=Images/live/2020-07/17/24986591-1-20.jpg&width=960',
         title: 'Printerest',
         url: 'https://www.pinterest.com/search/pins/?q=old%20cars&rs=typed&term_meta[]=old%7Ctyped&term_meta[]=cars%7Ctyped'
     },
     {
         id: 6,
-        imageUrl: 'https://hips.hearstapps.com/toc.h-cdn.co/assets/16/18/2560x1706/1967-camaro.jpg?resize=980:*',
+        imageUrl: 'https://images2.bonhams.com/image?src=Images/live/2020-08/06/24999162-1-8.jpg&width=960',
         title: 'Printerest',
         url: 'https://www.pinterest.com/search/pins/?q=old%20cars&rs=typed&term_meta[]=old%7Ctyped&term_meta[]=cars%7Ctyped'
     },
@@ -120,9 +120,9 @@ arrowLeft.addEventListener('click', arrowLeftClick);
 
 arrowRight.addEventListener('click', arrowRightClick);
 
-setInterval( ()=> {
-    arrowRightClick();
-}, 3000);
+// setInterval( ()=> {
+//     arrowRightClick();
+// }, 3000);
 
  setSlide();
 

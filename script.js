@@ -120,9 +120,9 @@ arrowLeft.addEventListener('click', arrowLeftClick);
 
 arrowRight.addEventListener('click', arrowRightClick);
 
-// setInterval( ()=> {
-//     arrowRightClick();
-// }, 3000);
+setInterval( ()=> {
+    arrowRightClick();
+}, 3000);
 
  setSlide();
 
@@ -208,3 +208,19 @@ function myFunction() {
       x.type = "password";
     }
   }
+
+//   localstorage & sesionstorage
+
+let counterItem = localStorage.getItem('counter');
+
+let newValue;
+if(!counterItem) {
+    newValue = 1;
+} else {
+    newValue = parseInt(counterItem) + 1;
+}
+
+localStorage.setItem('counter', newValue);
+
+// document.getElementById('userCounter').textContent = localStorage.getItem('counter');
+// console.log(counter);

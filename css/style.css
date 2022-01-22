@@ -263,3 +263,14 @@ img {
     opacity: 1;
     right: 0;
   }
+
+  /* contact */
+  .body3{
+      padding-top: 100px;
+      
+  }
+  .ul-list{
+      display: flex;
+      justify-content: space-between;
+      
+  }

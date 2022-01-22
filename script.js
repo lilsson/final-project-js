@@ -122,7 +122,7 @@ arrowRight.addEventListener('click', arrowRightClick);
 
 setInterval( ()=> {
     arrowRightClick();
-}, 3000);
+}, 6000);
 
  setSlide();
 
@@ -224,3 +224,9 @@ localStorage.setItem('counter', newValue);
 
 // document.getElementById('userCounter').textContent = localStorage.getItem('counter');
 // console.log(counter);
+
+
+
+
+
+ 

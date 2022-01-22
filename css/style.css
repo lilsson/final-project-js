@@ -16,12 +16,12 @@
     display: flex;
     
 }
-.nav-list li {
+.lisi {
     font-size: 24px;
     font-family: 'Archivo Black', sans-serif;
     
 }
-li:hover{
+.lisi:hover{
     font-size: 26px;
     transition-duration: 2s;
     
@@ -163,6 +163,7 @@ img {
     transform: translateX(-50%);
 }
  /*          registracion          */
+ 
  .form2{
     background-color: 	#E8E8E8; 
     margin-top: -3px;
@@ -267,10 +268,54 @@ img {
   /* contact */
   .body3{
       padding-top: 100px;
-      
+      max-width: 1180px;
+      width: 100%;
+      margin:0 auto;
+      /* flex-wrap: wrap; */
+     
   }
-  .ul-list{
-      display: flex;
-      justify-content: space-between;
-      
+  .line1{
+    height: 0.5px;
+    width: 100%;
+    background-color: black;
+    margin: 2.81em 0 2.81em;
+    opacity: 50%;
   }
+#list {
+    display: flex;
+    justify-content: space-between;
+}
+.image-block {
+    height: 126px;
+    border-radius: 50%;
+}
+.button3{
+    text-align: center;
+    margin-top: 40px;
+   
+}
+.prev1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #992600;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+.next1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #992600;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+.line2{
+    height: 0.5px;
+    width: 100%;
+    background-color: black;
+    margin: 2.81em 0 2.81em;
+    opacity: 50%;
+}

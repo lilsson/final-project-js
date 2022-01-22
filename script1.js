@@ -7,43 +7,77 @@ burgerButton.addEventListener('click',  function() {
 
 })
 
-//            ajax (contact)
+//load more example - xml http requist
 
+let currentPage = 1;
 
-function getUsers() {
+let totalPages;
+
+function getUsersInfo(page) {
 
     function render() {
         let response = this.responseText;
-        let responseData = JSON.parse(response)
+        let responseData = JSON.parse(response);
 
-        let ul = document.createElement('ul');
-        ul.classList.add('ul-list');
+        var fragment = document.createDocumentFragment();
 
         responseData.data.forEach( item => {
             let li = document.createElement('li');
-            li.textContent = item.first_name;
 
-            ul.appendChild(li);
+            let p = document.createElement('p');
+            p.textContent = item.first_name;
 
+            let img = document.createElement('img');
+            img.src = item.avatar;
+            img.classList.add('image-block');
+
+            let span = document.createElement('span');
+            span.textContent = item.email;
+
+            li.appendChild(img);
+            li.appendChild(p);
+            li.appendChild(span);
+
+            fragment.appendChild(li);
         })
-        
-        document.getElementById('api').appendChild(ul);
-        console.log(responseData);
+
+        document.getElementById('list').innerHTML = ' ';
+        document.getElementById('list').appendChild(fragment);
+
+        totalPages = responseData.total_pages;
+    }
+
+    function error() {
 
     }
-    function errorRender() {
-        let p = document.createElement('p');
-        p.textContent = 'server Error';
 
-        document.getElementById('api').appendChildA(p);
-    }
+
     let requist = new XMLHttpRequest();
-
-    requist.addEventListener('load', render);
-    requist.addEventListener('error', errorRender);
-
-    requist.open('GET', 'https://reqres.in/api/users?page=2');
+    requist.addEventListener('load',render);
+    requist.addEventListener('error', error);
+    requist.open('GET', 'https://reqres.in/api/users?page=' + page);
     requist.send();
+
 }
 
-getUsers();
+document.getElementById('prev').addEventListener('click', function() {
+    if (currentPage == 1) {
+        return;
+    }
+    currentPage -= 1;
+    // currentPage = currentPage - 1
+
+    getUsersInfo(currentPage);
+});
+
+
+document.getElementById('next').addEventListener('click', function() {
+    if (currentPage == totalPages) {
+        return;
+    }
+    currentPage += 1;
+
+    getUsersInfo(currentPage);
+});
+
+getUsersInfo();

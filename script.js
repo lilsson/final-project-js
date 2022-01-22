@@ -200,14 +200,14 @@ if (Object.keys(errors).length == 0){
 console.log(errors);
 })
 // show me password
-function myFunction() {
-    var x = document.getElementById("mypassword");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
-  }
+// function myFunction() {
+//     var x = document.getElementById("mypassword");
+//     if (x.type === "password") {
+//       x.type = "text";
+//     } else {
+//       x.type = "password";
+//     }
+//   }
 
 //   localstorage & sesionstorage
 

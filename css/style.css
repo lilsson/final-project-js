@@ -63,7 +63,7 @@
     display: none;
     z-index: 100;
 }
-.line{
+.lineo{
     width: 100%;
     height: 3px;
     position: absolute;
@@ -73,30 +73,30 @@
     transition: all 0.3s linear;
 }
 
-.line1{
+.line001{
     background-color:  	 #992600;
     top: 30%;
 }
-.line2{
-    background-color: #fff;
+.line002{
+    background-color: rgb(85, 22, 22);
     width: 80%;
     height: 2px;
 }
-.line3{
+.line003{
     background-color:  #992600;
     top: 70%;
 }
 /* ამოვატრიალოთ ლაინები */
 
-.active .line1{
+.active .line001{
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 
 }
-.active .line2{
+.active .line002{
     display: none;
 }
-.active .line3{
+.active .line003{
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
@@ -271,6 +271,7 @@ img {
       max-width: 1180px;
       width: 100%;
       margin:0 auto;
+      margin-bottom: 40px;
       /* flex-wrap: wrap; */
      
   }
@@ -284,6 +285,7 @@ img {
 #list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .image-block {
     height: 126px;
@@ -319,3 +321,42 @@ img {
     margin: 2.81em 0 2.81em;
     opacity: 50%;
 }
+
+/*footer style*/
+.oring{
+    background-color: black;
+    
+}
+.footer-conteiner{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    max-width: 1088px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.Home{
+	font-size: 24px;
+	color: #992600;
+	margin-bottom: 10px;
+}
+ .top{
+ 	margin-bottom: 10px;
+ 	color: #7B7B7B;
+ 	font-size: 16px;
+ }
+ 
+ .emvl{
+ 	max-width: 50px;
+    width: 100%;
+    height: 50px;
+
+ }
+ 
+ .api001{
+     
+     flex-wrap: wrap;
+ }

@@ -19,11 +19,14 @@
 .lisi {
     font-size: 24px;
     font-family: 'Archivo Black', sans-serif;
+   
     
 }
 .lisi:hover{
     font-size: 26px;
     transition-duration: 2s;
+    
+    
     
 }
 .lisi{
@@ -371,19 +374,19 @@ img {
      padding-top: 200px;
  }
  .section1{
-     max-width: 1170px;
-     width: 100%;
      margin-left: 50px;
+     
  }
  .section2{
      background-image: url(https://hips.hearstapps.com/toc.h-cdn.co/assets/16/14/1024x577/1967-porsche-911-r_1.jpg?resize=980:*)  ;
      height: 500px;
      max-width: 900px;
-     width: 100%;
+     width: 50%;
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
      position: relative;
+     
      
 
      
@@ -427,12 +430,12 @@ img {
      background-image: url(https://hips.hearstapps.com/toc.h-cdn.co/assets/16/14/2560x1820/1962-ferrari-250-gto_1.jpg?resize=980:*)  ;
      height: 500px;
      max-width: 900px;
-     width: 100%;
+     width: 50%;
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
      position: relative;
-     left: 400px;
+     left: 150px;
  }
 
  .rightline1{
@@ -442,7 +445,7 @@ img {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    left: 40px;
+    left: 250px;
     top: 435px;
     position: absolute;
  }
@@ -452,11 +455,44 @@ img {
     background-image: url(https://hips.hearstapps.com/toc.h-cdn.co/assets/16/18/1962-shelby-cobra-a.jpg?crop=1xw:1.0xh;center,top&resize=980:*)  ;
     height: 500px;
     max-width: 900px;
-    width: 100%;
+    width: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
     left: 30px;
     top: -90px;
+ }
+
+ /* gallery bottom */
+.sectionimg1{
+    background-color: #f0f5f5;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+.piccont{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+ .picwraper{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+ .imgbox1{
+     width: 270px;
+     
+ }
+
+ .imgbox101{
+     width: 100%;
+     height: 400px;
+     object-fit: cover;
+     
+ }
+ .imgone{
+     padding-bottom: 20px;
+     font-size: 20px;
+     font-family: 'Archivo Black', sans-serif;
  }
